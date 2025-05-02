@@ -5,4 +5,4 @@
 
 **1. Base de datos**
 
-[Definición de esquema de base de dato]()
+[Definición de esquema de base de dato](https://github.com/angcoder-c/Food-Recommendations-P2/blob/main/db/docs.md)
