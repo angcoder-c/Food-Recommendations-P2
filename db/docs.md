@@ -76,8 +76,7 @@ ORDER BY Puntos DESC
 LIMIT 5;
 ```
 
-### Restaurantes más cercanos a una ubicación (sin guardar lat/lon en Usuario)
-
+### Restaurantes más cercanos a una ubicación
 ```
 WITH {lat} AS latUsuario, {lon} AS lonUsuario
 MATCH (r:Restaurante)-[:UBICADO_EN]->(l:Ubicacion)
@@ -89,14 +88,14 @@ ORDER BY Distancia ASC
 LIMIT 3;
 ```
 
-### Información de ubicación de un restaurante
+### Ubicación de un restaurante
 
 ```
 MATCH (r:Restaurante {nombre: { nombre del restaurante } })-[:UBICADO_EN]->(l:Ubicacion)
 RETURN r.nombre AS Restaurante, l.nombre AS Edificio, l.lat AS Latitud, l.lon AS Longitud;
 ```
 
-### Todas las ubicaciones de restaurantes
+### Ubicaciones de restaurantes
 
 ```
 MATCH (r:Restaurante)-[:UBICADO_EN]->(l:Ubicacion)
