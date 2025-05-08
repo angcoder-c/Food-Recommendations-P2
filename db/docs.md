@@ -1,103 +1,76 @@
-# Esquema y querys Neo4j
-
-## Esquema
+# Esquema
 
 ```
+// data base
 MATCH (n) DETACH DELETE n;
 
 // ubicaciones
 MERGE (u:Ubicacion {nombre: "CIT Segundo nivel"})
-SET u.lat = 20.112, u.lon = -99.223;
+SET u.lat = 14.605, u.lon = -90.49;
 
-// restaurantes con ubicación
-MERGE (r:Restaurante {nombre: "Go green"})
+// restaurantes
+MERGE (r:Restaurante {nombre: "Restaurante1"})
 WITH r
 MATCH (u:Ubicacion {nombre: "CIT Segundo nivel"})
-MERGE (r)-[:UBICADO_EN]->(u);
+MERGE (r)-[:LOCATED_AT]->(u);
 
 // productos
-MERGE (px:Producto {nombre: "ComidaX", tipo: "comida"});
-MERGE (py:Producto {nombre: "ComidaY", tipo: "comida"});
-MERGE (pz:Producto {nombre: "ComidaZ", tipo: "comida"});
+MERGE (px:Producto {nombre: "ComidaX", tipo: "comida", precio: 80.0});
+MERGE (py:Producto {nombre: "ComidaY", tipo: "comida", precio: 95.0});
+MERGE (pz:Producto {nombre: "ComidaZ", tipo: "comida", precio: 75.0});
+MERGE (pw:Producto {nombre: "ComidaW", tipo: "comida", precio: 110.0});
 
-// relacion de restaurante con productos
 MATCH (r:Restaurante {nombre: "Go green"})
 MATCH (px:Producto {nombre: "ComidaX"})
 MATCH (py:Producto {nombre: "ComidaY"})
 MATCH (pz:Producto {nombre: "ComidaZ"})
+MATCH (pw:Producto {nombre: "ComidaW"})
 MERGE (r)-[:OFRECE]->(px)
 MERGE (r)-[:OFRECE]->(py)
-MERGE (r)-[:OFRECE]->(pz);
+MERGE (r)-[:OFRECE]->(pz)
+MERGE (r)-[:OFRECE]->(pw);
 
-// usuario 1: ComidaX
-MERGE (u1:Usuario {id: "usuario1"})
+// user 1: likes
+MERGE (u1:Usuario {id: "usuario1", nombre: "user 1"})
 WITH u1
 MATCH (px:Producto {nombre: "ComidaX"})
-MERGE (u1)-[:LIKE]->(px);
+MATCH (py:Producto {nombre: "ComidaY"})
+MERGE (u1)-[:LIKE {fecha: datetime('2025-03-15')}]->(px)
+MERGE (u1)-[:LIKE {fecha: datetime('2025-03-20')}]->(py);
 
-// usuario 2: ComidaX y ComidaY
-MERGE (u2:Usuario {id: "usuario2"})
+// usuario 2: likes
+MERGE (u2:Usuario {id: "usuario2", nombre: "user 2"})
 WITH u2
-MATCH (px:Producto {nombre: "ComidaX"}), (py:Producto {nombre: "ComidaY"})
-MERGE (u2)-[:LIKE]->(px)
-MERGE (u2)-[:LIKE]->(py);
+MATCH (px:Producto {nombre: "ComidaX"})
+MATCH (py:Producto {nombre: "ComidaY"})
+MATCH (pz:Producto {nombre: "ComidaZ"})
+MERGE (u2)-[:LIKE {fecha: datetime('2025-03-12')}]->(px)
+MERGE (u2)-[:LIKE {fecha: datetime('2025-03-18')}]->(py)
+MERGE (u2)-[:LIKE {fecha: datetime('2025-04-02')}]->(pz);
 
-// usuario 3: ComidaX y ComidaZ
-MERGE (u3:Usuario {id: "usuario3"})
+// usuario 3: likes
+MERGE (u3:Usuario {id: "usuario3", nombre: "user 3"})
 WITH u3
-MATCH (px:Producto {nombre: "ComidaX"}), (pz:Producto {nombre: "ComidaZ"})
-MERGE (u3)-[:LIKE]->(px)
-MERGE (u3)-[:LIKE]->(pz);
-```
+MATCH (px:Producto {nombre: "ComidaX"})
+MATCH (pz:Producto {nombre: "ComidaZ"})
+MERGE (u3)-[:LIKE {fecha: datetime('2025-03-10')}]->(px)
+MERGE (u3)-[:LIKE {fecha: datetime('2025-03-22')}]->(pz);
 
-## querys
+// usuario 4: likes
+MERGE (u4:Usuario {id: "usuario4", nombre: "user 4"})
+WITH u4
+MATCH (py:Producto {nombre: "ComidaY"})
+MATCH (pz:Producto {nombre: "ComidaZ"})
+MATCH (pw:Producto {nombre: "ComidaW"})
+MERGE (u4)-[:LIKE {fecha: datetime('2025-03-15')}]->(py)
+MERGE (u4)-[:LIKE {fecha: datetime('2025-03-28')}]->(pz)
+MERGE (u4)-[:LIKE {fecha: datetime('2025-04-05')}]->(pw);
 
-### productos por restaurante
-
-```
-MATCH (r:Restaurante)-[:OFRECE]->(p:Producto)
-RETURN r.nombre AS Restaurante, collect(p.nombre) AS Productos;
-```
-
-### Mostrar gustos de un usuario
-
-```
-MATCH (u:Usuario {id: "usuario-x"})-[:LIKE]->(p:Producto)
-RETURN u.id AS Usuario, collect(p.nombre) AS Gustos;
-```
-
-### Collaborative filtering
-
-```
-MATCH (ux:Usuario {id: "usuario-x"})-[:LIKE]->(p:Producto)<-[:LIKE]-(uy:Usuario)-[:LIKE]->(rec:Producto)
-WHERE NOT (u1)-[:LIKE]->(rec)
-RETURN rec.nombre AS Recomendado, count(*) AS Puntos
-ORDER BY Puntos DESC
-LIMIT 5;
-```
-
-### Restaurantes más cercanos a una ubicación
-```
-WITH {lat} AS latUsuario, {lon} AS lonUsuario
-MATCH (r:Restaurante)-[:UBICADO_EN]->(l:Ubicacion)
-WITH r, l, 
-     point({latitude: latUsuario, longitude: lonUsuario}) AS puntoUsuario,
-     point({latitude: l.lat, longitude: l.lon}) AS puntoUbicacion
-RETURN r.nombre AS Restaurante, point.distance(puntoUsuario, puntoUbicacion) AS Distancia
-ORDER BY Distancia ASC
-LIMIT 3;
-```
-
-### Ubicación de un restaurante
-
-```
-MATCH (r:Restaurante {nombre: { nombre del restaurante } })-[:UBICADO_EN]->(l:Ubicacion)
-RETURN r.nombre AS Restaurante, l.nombre AS Edificio, l.lat AS Latitud, l.lon AS Longitud;
-```
-
-### Ubicaciones de restaurantes
-
-```
-MATCH (r:Restaurante)-[:UBICADO_EN]->(l:Ubicacion)
-RETURN r.nombre AS Restaurante, l.nombre AS Ubicacion;
+// usuario 5: likes
+MERGE (u5:Usuario {id: "usuario5", nombre: "user 5"})
+WITH u5
+MATCH (px:Producto {nombre: "ComidaX"})
+MATCH (pw:Producto {nombre: "ComidaW"})
+MERGE (u5)-[:LIKE {fecha: datetime('2025-03-25')}]->(px)
+MERGE (u5)-[:LIKE {fecha: datetime('2025-04-01')}]->(pw);
 ```
