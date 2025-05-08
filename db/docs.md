@@ -74,3 +74,6 @@ MATCH (pd:Producto {nombre: "ComidaD"})
 MERGE (u5)-[:LIKE {fecha: datetime('2025-03-25')}]->(pa)
 MERGE (u5)-[:LIKE {fecha: datetime('2025-04-01')}]->(pd);
 ```
+
+![image](https://github.com/user-attachments/assets/2764faff-483f-4393-bceb-bcaa8221a85b)
+
