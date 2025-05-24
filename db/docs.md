@@ -31,7 +31,7 @@ MERGE (r)-[:OFRECE]->(pc)
 MERGE (r)-[:OFRECE]->(pd);
 
 // user 1: likes
-MERGE (u1:Usuario {id: "usuario1", nombre: "user 1"})
+MERGE (u1:Usuario {id: "usuario1", nombre: "user 1", password: "123"})
 WITH u1
 MATCH (pa:Producto {nombre: "ComidaA"})
 MATCH (pb:Producto {nombre: "ComidaB"})
@@ -39,7 +39,7 @@ MERGE (u1)-[:LIKE {fecha: datetime('2025-03-15')}]->(pa)
 MERGE (u1)-[:LIKE {fecha: datetime('2025-03-20')}]->(pb);
 
 // usuario 2: likes
-MERGE (u2:Usuario {id: "usuario2", nombre: "user 2"})
+MERGE (u2:Usuario {id: "usuario2", nombre: "user 2", password: "123"})
 WITH u2
 MATCH (pa:Producto {nombre: "ComidaA"})
 MATCH (pb:Producto {nombre: "ComidaB"})
@@ -49,7 +49,7 @@ MERGE (u2)-[:LIKE {fecha: datetime('2025-03-18')}]->(pb)
 MERGE (u2)-[:LIKE {fecha: datetime('2025-04-02')}]->(pc);
 
 // usuario 3: likes
-MERGE (u3:Usuario {id: "usuario3", nombre: "user 3"})
+MERGE (u3:Usuario {id: "usuario3", nombre: "user 3", password: "123"})
 WITH u3
 MATCH (pa:Producto {nombre: "ComidaA"})
 MATCH (pc:Producto {nombre: "ComidaC"})
@@ -57,7 +57,7 @@ MERGE (u3)-[:LIKE {fecha: datetime('2025-03-10')}]->(pa)
 MERGE (u3)-[:LIKE {fecha: datetime('2025-03-22')}]->(pc);
 
 // usuario 4: likes
-MERGE (u4:Usuario {id: "usuario4", nombre: "user 4"})
+MERGE (u4:Usuario {id: "usuario4", nombre: "user 4", password: "123"})
 WITH u4
 MATCH (pb:Producto {nombre: "ComidaB"})
 MATCH (pc:Producto {nombre: "ComidaC"})
@@ -67,7 +67,7 @@ MERGE (u4)-[:LIKE {fecha: datetime('2025-03-28')}]->(pc)
 MERGE (u4)-[:LIKE {fecha: datetime('2025-04-05')}]->(pd);
 
 // usuario 5: likes
-MERGE (u5:Usuario {id: "usuario5", nombre: "user 5"})
+MERGE (u5:Usuario {id: "usuario5", nombre: "user 5", password: "123"})
 WITH u5
 MATCH (pa:Producto {nombre: "ComidaA"})
 MATCH (pd:Producto {nombre: "ComidaD"})
