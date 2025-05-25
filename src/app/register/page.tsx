@@ -1,7 +1,42 @@
-export default function Register() {
+'use client';
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuthStore } from '@/stores/useAuthStore';
+import { User } from '@/stores/useAuthStore';
+
+export default function RegistroPage() {
+  const [nombre, setNombre] = useState('')
+  const [password, setPassword] = useState('')
+  const { login } = useAuthStore()
+  const router = useRouter()
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+
+    const res = await fetch('/api/user/register', {
+      method: 'POST',
+      body: JSON.stringify({ nombre, password }),
+    })
+
+    const data = await res.json()
+
+    if (res.ok) {
+      const token = data.token
+      const { id } = JSON.parse(atob(token?.split('.')[1]))
+      login(data.token, {nombre, id})
+      router.push('/')
+    } else {
+      alert(data.error || 'register error');
+    }
+  };
+
   return (
-    <div>
-        <h1>Registro</h1>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <h1>Registro</h1>
+      <input value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" />
+      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Contraseña" />
+      <button type="submit">Registrarse</button>
+    </form>
   );
 }

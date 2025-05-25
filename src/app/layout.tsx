@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Navbar from "@/components/navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,13 +15,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <nav>
-          <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
-          </ul>
-        </nav>
+        <Navbar/>
         {children}
       </body>
     </html>

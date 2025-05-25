@@ -2,17 +2,17 @@ import { NextResponse } from 'next/server';
 import driver from './../../../lib/neo4j';
 
 export async function POST(request: Request) {
-    const session = driver.session();
+    const session = driver.session()
 
     try {
-        const body = await request.json();
-        const {id} = body;
+        const body = await request.json()
+        const {id} = body
 
         if (!id) {
             return NextResponse.json(
                 { error: 'ERROR: se requiere id de un usuario' },
                 { status: 400 }
-            );
+            )
         }
 
         const similitudQuery = `
@@ -28,8 +28,8 @@ export async function POST(request: Request) {
                  ELSE 1.0 * commonCount / (u1Count + u2Count - commonCount) END AS similaridad
             MERGE (u1)-[s:SIMILAR_A]->(u2)
             SET s.score = similaridad
-        `;
-        await session.run(similitudQuery);
+        `
+        await session.run(similitudQuery)
 
         const recomendacionQuery = `
             MATCH (targetUser:Usuario {id: "${id}"})-[s:SIMILAR_A]->(similarUser:Usuario)
@@ -39,22 +39,22 @@ export async function POST(request: Request) {
             ORDER BY score DESC, userCount DESC
             LIMIT 5
             RETURN p.nombre AS producto, score AS puntuacion, userCount AS popularidad
-        `;
+        `
 
-        const result = await session.run(recomendacionQuery);
+        const result = await session.run(recomendacionQuery)
 
         const recomendaciones = result.records.map((record) => ({
             producto: record.get('producto'),
             puntuacion: record.get('puntuacion'),
             popularidad: record.get('popularidad'),
-        }));
+        }))
 
-        return NextResponse.json({ recomendaciones });
+        return NextResponse.json({ recomendaciones })
 
     } catch (error) {
-        console.error('ERROR: ', error);
-        return NextResponse.json({ error: 'internal server error' }, { status: 500 });
+        console.error('ERROR: ', error)
+        return NextResponse.json({ error: 'internal server error' }, { status: 500 })
     } finally {
-        await session.close();
+        await session.close()
     }
 }

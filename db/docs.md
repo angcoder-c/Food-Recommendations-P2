@@ -30,6 +30,11 @@ MERGE (r)-[:OFRECE]->(pb)
 MERGE (r)-[:OFRECE]->(pc)
 MERGE (r)-[:OFRECE]->(pd);
 
+// excluir nombres repetidos
+CREATE CONSTRAINT unique_usuario_nombre IF NOT EXISTS
+FOR (u:Usuario)
+REQUIRE u.nombre IS UNIQUE;
+
 // user 1: likes
 MERGE (u1:Usuario {id: "usuario1", nombre: "user 1", password: "123"})
 WITH u1

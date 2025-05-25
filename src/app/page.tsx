@@ -1,7 +1,11 @@
-export default function Home() {
+'use client';
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuthStore } from './../stores/useAuthStore';
+
+export default function LoginPage() {
   return (
-    <div>
-        <h1>Hello world</h1>
-    </div>
+    <h1>Food recomendation</h1>
   );
 }
