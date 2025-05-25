@@ -18,18 +18,18 @@ export async function POST(request: Request) {
         const tx = session.beginTransaction();
 
         for (const producto of productos) {
-            const { nombre, tipo, precio } = producto;
+            const { nombre, tipo, precio, img } = producto;
 
-            if (!nombre || !tipo || typeof precio !== 'number') {
+            if (!nombre || !img || !tipo || typeof precio !== 'number') {
                 return NextResponse.json(
-                    { error: 'ERROR: un producto debe tener nombre, tipo y precio' },
+                    { error: 'ERROR: un producto debe tener nombre, img, tipo y precio' },
                     { status: 400 }
                 );
             }
 
             const query = `
                 MERGE (p:Producto {nombre: "${nombre}"})
-                SET p.tipo = "${tipo}", p.precio = ${precio}
+                SET p.tipo = "${tipo}", p.precio = ${precio}, p.img = "${img}"
                 WITH p
                 MATCH (r:Restaurante {nombre: "${restaurante}"})
                 MERGE (r)-[:OFRECE]->(p)

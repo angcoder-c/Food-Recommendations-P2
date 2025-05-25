@@ -15,10 +15,10 @@ MATCH (u:Ubicacion {nombre: "CIT Segundo nivel"})
 MERGE (r)-[:LOCATED_AT]->(u);
 
 // productos
-MERGE (pa:Producto {nombre: "ComidaA", tipo: "comida", precio: 80.0});
-MERGE (pb:Producto {nombre: "ComidaB", tipo: "comida", precio: 95.0});
-MERGE (pc:Producto {nombre: "ComidaC", tipo: "comida", precio: 75.0});
-MERGE (pd:Producto {nombre: "ComidaD", tipo: "comida", precio: 110.0});
+MERGE (pa:Producto {nombre: "ComidaA", tipo: "comida", precio: 80.0, img: "https://grupogogreen.com/wp-content/uploads/2022/07/Igo-Big-Burrito-1.png"});
+MERGE (pb:Producto {nombre: "ComidaB", tipo: "comida", precio: 95.0, img: "https://grupogogreen.com/wp-content/uploads/2022/07/Igo-Big-Burrito-1.png"});
+MERGE (pc:Producto {nombre: "ComidaC", tipo: "comida", precio: 75.0, img: "https://grupogogreen.com/wp-content/uploads/2022/07/Igo-Big-Burrito-1.png"});
+MERGE (pd:Producto {nombre: "ComidaD", tipo: "comida", precio: 110.0, img: "https://grupogogreen.com/wp-content/uploads/2022/07/Igo-Big-Burrito-1.png"});
 
 MATCH (r:Restaurante {nombre: "Restaurante1"})
 MATCH (pa:Producto {nombre: "ComidaA"})
