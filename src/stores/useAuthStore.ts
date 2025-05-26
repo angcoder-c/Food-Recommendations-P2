@@ -23,7 +23,7 @@ export const useAuthStore = create<AuthStore>()(
       token: null,
       userId: null,
       isLoggedIn: false,
-      user: {nombre: "", id: ""},
+      user: null,
       login: (token, user:User) => {
         set({ token, user, isLoggedIn: true, userId:user?.id });
       },
