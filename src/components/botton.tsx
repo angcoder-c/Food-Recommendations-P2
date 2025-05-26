@@ -1,3 +1,4 @@
+"use client";
 /**
  * A customizable button component that navigates to a specified route using Next.js router.
  *
