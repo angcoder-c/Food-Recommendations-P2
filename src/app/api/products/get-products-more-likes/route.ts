@@ -31,7 +31,7 @@ export async function GET() {
     } catch (error) {
         console.error('ERROR:', error);
         return NextResponse.json(
-            { error: 'Error interno del servidor' },
+            { error: 'internal server error' },
             { status: 500 }
         );
     } finally {
