@@ -3,7 +3,9 @@
 import { Card } from "@/components/ui/card";
 import { CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useAuthStore } from "@/stores/useAuthStore";
 
 export type Producto = {
     nombre : string,
@@ -14,6 +16,20 @@ export type Producto = {
 }
 
 export default function ProductCard ({ producto } : { producto : Producto }) {
+    const { userId, likesum, likeCount } = useAuthStore()
+    const likeProduct = async ( productName: string) => {
+      const res = await fetch('/api/user/user-like-product', {
+        method: 'POST',
+        body: JSON.stringify({ usuarioId: userId, productoNombre: productName })
+      })
+      const data = await res.json()
+    
+      if (res.ok) {
+        likesum(likeCount+1)
+      } else {
+        console.error(data.error || 'request error')
+      }
+    }
     return (
         <Card
         className="bg-gray-800 border-gray-700 hover:border-green-500 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20 group"
@@ -33,9 +49,20 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
                     >
                       {producto.restaurante}
                     </Link>
-                    <Badge variant={'outline'} className="border-green-500 text-green-400 text-xs">
-                      Q {producto.precio}
-                    </Badge>
+                    <div className="flex gap-2">
+                      <Badge variant={'outline'} className="border-green-500 text-green-400 text-xs">
+                        Q {producto.precio}
+                      </Badge>
+                      {
+                        userId ? (
+                          <Button onClick={()=>likeProduct(producto.nombre)} variant="ghost" className=" text-green-400 hover:text-green-300 bg-gray-700">
+                            👍
+                          </Button>
+                        ) : (
+                          <></>
+                        )
+                      }
+                    </div>
                 </div>
             </CardContent>
         </Card>

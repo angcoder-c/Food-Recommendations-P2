@@ -6,11 +6,11 @@ import { Producto } from './product-card';
 import { useRouter } from 'next/navigation';
 import { useAuthStore } from './../stores/useAuthStore';
 
-export default function GridProducts({ productos } : { productos : Producto[] }) {
+export default function GridProducts({ title, productos } : { title:string, productos : Producto[] }) {
     return (
-        <div>
+        <div className="pb-4">
             <h2 className="text-2xl font-bold text-green-400 mb-8 flex items-center">
-                Los más populares
+                {title}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {

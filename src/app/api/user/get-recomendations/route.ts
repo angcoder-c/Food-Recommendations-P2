@@ -6,8 +6,9 @@ export async function POST(request: Request) {
 
     try {
         const body = await request.json()
-        const {id} = body
+        const { id } = body
 
+        
         if (!id) {
             return NextResponse.json(
                 { error: 'ERROR: se requiere id de un usuario' },
@@ -38,15 +39,28 @@ export async function POST(request: Request) {
             WITH p, SUM(s.score) AS score, COUNT(similarUser) AS userCount
             ORDER BY score DESC, userCount DESC
             LIMIT 5
-            RETURN p.nombre AS producto, score AS puntuacion, userCount AS popularidad
+            // obtener los detalles del producto
+            OPTIONAL MATCH (p)<-[:OFRECE]-(r:Restaurante)
+            OPTIONAL MATCH (u:Usuario)-[:LIKE]->(p)
+            WITH p, r, score, userCount, COUNT(u) AS likeCount
+            RETURN 
+            p.nombre AS nombre,
+            r.nombre AS restaurante,
+            p.tipo AS tipo,
+            p.precio AS precio,
+            likeCount AS likes,
+            p.img AS img
         `
 
         const result = await session.run(recomendacionQuery)
 
         const recomendaciones = result.records.map((record) => ({
-            producto: record.get('producto'),
-            puntuacion: record.get('puntuacion'),
-            popularidad: record.get('popularidad'),
+            nombre: record.get('nombre'),
+            tipo: record.get('tipo'),
+            precio: record.get('precio'),
+            img: record.get('img'),
+            restaurante: record.get('restaurante'),
+            likes: record.get('likes').toInt()
         }))
 
         return NextResponse.json({ recomendaciones })
