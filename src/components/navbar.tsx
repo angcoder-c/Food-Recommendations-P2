@@ -8,7 +8,7 @@ export default function Navbar() {
   const { user, logout } = useAuthStore();
 
   return (
-      <nav className="fixed top-4 left-10 right-10 z-50 bg-gray-800/90 backdrop-blur rounded-xl shadow-lg px-6 py-4">
+      <nav className="fixed top-4 left-5 right-5 z-50 bg-gray-800/90 backdrop-blur rounded-xl shadow-lg px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div>
             <Link href={'/'} className="text-white font-medium">

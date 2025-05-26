@@ -3,9 +3,12 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuthStore } from './../stores/useAuthStore';
+import MostPopularProducts from '@/components/most-popular';
 
-export default function LoginPage() {
+export default function Home() {
   return (
-    <h1>Food recomendation</h1>
+    <div className="mx-auto py-8">
+        <MostPopularProducts/>
+    </div>
   );
 }

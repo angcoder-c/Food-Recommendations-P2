@@ -6,8 +6,13 @@ export async function GET() {
 
     try {
         const query = `
-            MATCH (u:Usuario)-[:LIKE]->(p:Producto)
-            RETURN p.nombre AS nombre, p.img AS img, p.tipo AS tipo, p.precio AS precio, COUNT(u) AS likes
+            MATCH (u:Usuario)-[:LIKE]->(p:Producto)<-[:OFRECE]-(r:Restaurante)
+            RETURN p.nombre AS nombre,
+                r.nombre AS restaurante,
+                p.tipo AS tipo,
+                p.precio AS precio,
+                p.img AS img,
+                COUNT(u) AS likes
             ORDER BY likes DESC
         `;
 
@@ -18,6 +23,7 @@ export async function GET() {
             tipo: record.get('tipo'),
             precio: record.get('precio'),
             img: record.get('img'),
+            restaurante: record.get('restaurante'),
             likes: record.get('likes').toInt(),
         }));
 
