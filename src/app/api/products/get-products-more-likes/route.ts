@@ -7,7 +7,7 @@ export async function GET() {
     try {
         const query = `
             MATCH (u:Usuario)-[:LIKE]->(p:Producto)
-            RETURN p.nombre AS nombre, p.tipo AS tipo, p.precio AS precio, COUNT(u) AS likes
+            RETURN p.nombre AS nombre, p.img AS img, p.tipo AS tipo, p.precio AS precio, COUNT(u) AS likes
             ORDER BY likes DESC
         `;
 
@@ -17,6 +17,7 @@ export async function GET() {
             nombre: record.get('nombre'),
             tipo: record.get('tipo'),
             precio: record.get('precio'),
+            img: record.get('img'),
             likes: record.get('likes').toInt(),
         }));
 
