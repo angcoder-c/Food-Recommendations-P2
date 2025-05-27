@@ -17,12 +17,15 @@ export async function POST(request: Request) {
 
         const query = `
             MATCH (r:Restaurante {nombre: "${nombre}"})-[:OFRECE]->(p:Producto)
+            OPTIONAL MATCH (u:Usuario)-[:LIKE]->(p)
             RETURN 
             r.nombre AS restaurante,
             p.nombre AS nombre, 
             p.tipo AS tipo, 
             p.precio AS precio, 
-            p.img AS img
+            p.img AS img,
+            COUNT(u) AS likes
+            ORDER BY likes DESC
         `;
 
         const result = await session.run(query, { nombre });
@@ -33,6 +36,7 @@ export async function POST(request: Request) {
             tipo: record.get('tipo'),
             precio: record.get('precio'),
             img: record.get('img'),
+            likes: record.get('likes').toInt()
         }));
 
         return NextResponse.json({ restaurante: nombre, productos });

@@ -13,11 +13,10 @@ export async function POST(request: Request) {
 
     if (!nombre || !password) {
       return NextResponse.json(
-        { error: 'ERROR: se requiere id y password' },
+        { error: 'ERROR: se requiere nombre y password' },
         { status: 400 }
       )
     }
-    const hashedPassword = await bcrypt.hash(password, 10);
 
     const result = await session.run(
       `
