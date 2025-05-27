@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 import { useAuthStore } from "@/stores/useAuthStore";
 
@@ -36,7 +37,7 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
         >
             <CardContent className="p-0">
                 <div className="h-32 rounded-t-lg flex items-center justify-center transition-colors">
-                    <img src={producto.img} alt={producto.nombre + producto.restaurante} />
+                  <Image src={producto.img} alt={producto.nombre + producto.restaurante} height={150} width={150}/>
                 </div>
                 
                 <div className="p-4 space-y-2">

@@ -58,14 +58,14 @@ export default function Home() {
       {isHydrated && userId && recomendations?.length ? (
         <>
           <GridProducts 
+            title='Recomendados'
+            productos={recomendations} 
+          />
+          <GridProducts 
             title='Los más populares'
             productos={popularProducts} 
           />
           
-          <GridProducts 
-            title='Recomendados'
-            productos={recomendations} 
-          />
         </>
       ) : (
         <GridProducts 

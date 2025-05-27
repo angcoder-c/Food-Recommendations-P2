@@ -32,11 +32,17 @@ export default function RegistroPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>Registro</h1>
-      <input value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" />
-      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Contraseña" />
-      <button type="submit">Registrarse</button>
+    <form onSubmit={handleSubmit} className='m-auto max-w-80'>
+      <h1 className="text-2xl font-bold text-green-400 mb-8 flex items-center">
+        Registro
+      </h1>
+      <div className='flex flex-col gap-6'>
+        <input value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" className='p-4 border-amber-100'/>
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Contraseña" className='p-4 border-amber-100'/>
+        <button type="submit" className="bg-green-600 hover:bg-green-700 text-white p-4 border-amber-100 rounded-2xl">
+            Registrarse
+        </button>
+      </div>
     </form>
   );
 }

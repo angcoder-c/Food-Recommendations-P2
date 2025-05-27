@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/navbar";
 import "./globals.css";
-import HeaderLayout from "@/components/header";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
@@ -20,7 +19,6 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1 pt-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
           {children}
-          <Footer />
         </main>
       </body> 
     </html>

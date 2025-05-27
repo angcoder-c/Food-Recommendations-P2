@@ -20,7 +20,7 @@ export async function POST(request: Request) {
         for (const producto of productos) {
             const { nombre, tipo, precio, img } = producto;
 
-            if (!nombre || !img || !tipo || typeof precio !== 'number') {
+            if (!nombre || !img || !tipo || typeof precio === 'number') {
                 return NextResponse.json(
                     { error: 'ERROR: un producto debe tener nombre, img, tipo y precio' },
                     { status: 400 }
