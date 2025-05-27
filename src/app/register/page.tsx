@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuthStore } from '@/stores/useAuthStore';
-import { User } from '@/stores/useAuthStore';
 
 export default function RegistroPage() {
   const [nombre, setNombre] = useState('')

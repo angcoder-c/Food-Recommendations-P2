@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/navbar";
 import "./globals.css";
-import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Food-Recomendation-UVG",

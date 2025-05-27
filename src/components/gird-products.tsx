@@ -1,10 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import ProductCard from './product-card';
 import { Producto } from './product-card';
-import { useRouter } from 'next/navigation';
-import { useAuthStore } from './../stores/useAuthStore';
 
 export default function GridProducts({ title, productos } : { title:string, productos : Producto[] }) {
     return (

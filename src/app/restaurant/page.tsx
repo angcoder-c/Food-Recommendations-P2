@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import GridProducts from "@/components/gird-products";
-import { Card } from "@/components/ui/card";
-import Image from "next/image";
 
 export default function Restaurant() {
   const [restaurantes, setRestaurantes] = useState([]);
