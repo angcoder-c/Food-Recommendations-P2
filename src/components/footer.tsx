@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../public/uvgLogo.png";
 
 export default function Footer() {
   return (
@@ -7,9 +8,13 @@ export default function Footer() {
         {/* Logo */}
         <div className="mb-6 md:mb-0">
           {/* Replace with actual image */}
-          <div className="w-[300px] h-[80px] bg-gray-300 flex items-center justify-center">
-            <span className="text-sm text-gray-600">[UVG Logo Here]</span>
-          </div>
+            <div className="w-full max-w-[140px] h-[80px] bg-gray-300 flex items-center justify-center">
+            <img
+              src={logo.src}
+              alt="UVG Logo"
+              className="w-full h-auto object-contain"
+            />
+            </div>
         </div>
 
         {/* Contact info */}

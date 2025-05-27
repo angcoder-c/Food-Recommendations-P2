@@ -16,7 +16,7 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Link href={'/'} className="text-white font-medium">
+            <Link href={'/restaurant'} className="text-white font-medium">
               Restaurantes
             </Link>
 
