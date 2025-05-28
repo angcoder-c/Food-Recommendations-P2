@@ -45,24 +45,133 @@ La aplicación permite:
 ## API Endpoints principales
 
 - **Restaurantes**
-  - `GET /api/restaurant/get-all` — Lista todos los restaurantes.
-  - `POST /api/restaurant/get-products` — Obtiene los productos de un restaurante.
-  - `POST /api/restaurant/add-products` — Agrega productos a un restaurante.
-  - `POST /api/restaurant/create-restaurant` — Crea un nuevo restaurante.
-  - `DELETE /api/restaurant/delete-restaurant` — Elimina un restaurante.
+  - `GET /api/restaurant/get-all`
+    - **Descripción:** Lista todos los restaurantes.
+    - **Body:** _No requiere._
+    - **Respuesta:** `["Barista", "Gitane", ...]`
+
+  - `POST /api/restaurant/get-products`
+    - **Descripción:** Obtiene los productos de un restaurante.
+    - **Body:**
+      ```json
+      { "nombre": "Barista" }
+      ```
+    - **Respuesta:**
+      ```json
+      {
+        "restaurante": "Barista",
+        "productos": [
+          { "nombre": "Café Latte", "tipo": "bebida", "precio": 25, "img": "url", "likes": 3 },
+          ...
+        ]
+      }
+      ```
+
+  - `POST /api/restaurant/add-products`
+    - **Descripción:** Agrega productos a un restaurante.
+    - **Body:**
+      ```json
+      {
+        "nombre": "Barista",
+        "productos": [
+          { "nombre": "Nuevo Producto", "tipo": "comida", "precio": 50, "img": "url" }
+        ]
+      }
+      ```
+
+  - `POST /api/restaurant/create-restaurant`
+    - **Descripción:** Crea un nuevo restaurante.
+    - **Body:**
+      ```json
+      { "nombre": "NuevoRestaurante" }
+      ```
+
+  - `DELETE /api/restaurant/delete-restaurant`
+    - **Descripción:** Elimina un restaurante.
+    - **Body:**
+      ```json
+      { "nombre": "Barista" }
+      ```
 
 - **Productos**
-  - `GET /api/products/get-products-more-likes` — Obtiene productos con más likes.
-  - `DELETE /api/products/delete-product` — Elimina un producto.
+  - `GET /api/products/get-products-more-likes`
+    - **Descripción:** Obtiene productos con más likes.
+    - **Body:** _No requiere._
+    - **Respuesta:**
+      ```json
+      [
+        { "nombre": "Café Latte", "tipo": "bebida", "precio": 25, "img": "url", "likes": 10, "restaurante": "Barista" },
+        ...
+      ]
+      ```
+
+  - `DELETE /api/products/delete-product`
+    - **Descripción:** Elimina un producto.
+    - **Body:**
+      ```json
+      { "nombre": "Café Latte" }
+      ```
 
 - **Usuarios**
-  - `POST /api/user/create-user` — Crea un usuario.
-  - `POST /api/user/login` — Login de usuario.
-  - `POST /api/user/register` — Registro de usuario.
-  - `DELETE /api/user/delete-user` — Elimina un usuario.
-  - `POST /api/user/user-like-product` — Da like a un producto.
-  - `POST /api/user/check-user-like` — Verifica si un usuario ya dio like a un producto.
-  - `POST /api/user/get-recomendations` — Obtiene recomendaciones personalizadas.
+  - `POST /api/user/create-user`
+    - **Descripción:** Crea un usuario.
+    - **Body:**
+      ```json
+      { "id": "123", "nombre": "Juan", "correo": "juan@mail.com", "password": "1234" }
+      ```
+
+  - `POST /api/user/login`
+    - **Descripción:** Login de usuario.
+    - **Body:**
+      ```json
+      { "correo": "juan@mail.com", "password": "1234" }
+      ```
+
+  - `POST /api/user/register`
+    - **Descripción:** Registro de usuario.
+    - **Body:**
+      ```json
+      { "nombre": "Juan", "correo": "juan@mail.com", "password": "1234" }
+      ```
+
+  - `DELETE /api/user/delete-user`
+    - **Descripción:** Elimina un usuario.
+    - **Body:**
+      ```json
+      { "id": "123" }
+      ```
+
+  - `POST /api/user/user-like-product`
+    - **Descripción:** Da like a un producto.
+    - **Body:**
+      ```json
+      { "usuarioId": "123", "productoNombre": "Café Latte" }
+      ```
+
+  - `POST /api/user/check-user-like`
+    - **Descripción:** Verifica si un usuario ya dio like a un producto.
+    - **Body:**
+      ```json
+      { "usuarioId": "123", "productoNombre": "Café Latte" }
+      ```
+    - **Respuesta:**
+      ```json
+      { "hasLiked": true, "usuarioId": "123", "productoNombre": "Café Latte" }
+      ```
+
+  - `POST /api/user/get-recomendations`
+    - **Descripción:** Obtiene recomendaciones personalizadas para un usuario.
+    - **Body:**
+      ```json
+      { "usuarioId": "123" }
+      ```
+    - **Respuesta:**
+      ```json
+      [
+        { "nombre": "Café Mocha", "tipo": "bebida", "precio": 30, "img": "url", "restaurante": "Barista" },
+        ...
+      ]
+      ```
 
 ## Instalación y ejecución
 
