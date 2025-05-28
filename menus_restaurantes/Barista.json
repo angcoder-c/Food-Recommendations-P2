@@ -1,0 +1,288 @@
+{
+    "restaurante": "barista",
+    "productos":[
+        
+    {"nombre": "te_borabora", 
+    "tipo": "bebida", 
+    "precio": 27,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Asset-29@3x-1.png"
+    },
+
+    {"nombre": "te_la_nube", 
+    "tipo": "bebida", 
+    "precio": 27,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Asset-29@3x-1.png"
+    },
+
+    {"nombre": "te_verdementa", 
+    "tipo": "bebida", 
+    "precio": 27,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Te-Matcha-Caliente.jpg"
+    },
+
+    {"nombre": "te_cerezavanilla", 
+    "tipo": "bebida", 
+    "precio": 27,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Asset-29@3x-1.png"
+    },
+
+    {"nombre": "te_amretto_manzana", 
+    "tipo": "bebida", 
+    "precio": 27,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Asset-29@3x-1.png"
+    },
+
+    {"nombre": "te_manzanilla", 
+    "tipo": "bebida", 
+    "precio": 27,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Asset-29@3x-1.png"
+    },
+
+    {"nombre": "te_matcha", 
+    "tipo": "bebida", 
+    "precio": 30,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Te-Matcha-Caliente.jpg"
+    },
+
+    {"nombre": "te_chai", 
+    "tipo": "bebida", 
+    "precio": 30,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Te-Chai-caliente.jpg"
+    },
+
+    {"nombre": "americano", 
+    "tipo": "bebida", 
+    "precio": 17,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Americano.jpg"
+    },
+
+    {"nombre": "cappuccino", 
+    "tipo": "bebida", 
+    "precio": 24,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2019/04/Cafe-de-la-casa.jpg"
+    },
+
+    {"nombre": "coldbrewlatte", 
+    "tipo": "bebida", 
+    "precio": 24,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Cold-Brew-Latte.jpg"
+    },
+
+    {"nombre": "icedcoffee", 
+    "tipo": "bebida", 
+    "precio": 17,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Iced-Coffee.jpg"
+    },
+
+    {"nombre": "icedlatte", 
+    "tipo": "bebida", 
+    "precio": 23,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Iced-Latte.jpg"
+    },
+
+    {"nombre": "chocolatecaliente", 
+    "tipo": "bebida", 
+    "precio": 26,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Chocolate-Caliente.jpg"
+    },
+
+    {"nombre": "flatwhite", 
+    "tipo": "bebida", 
+    "precio": 27,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Flat-White.jpg"
+    },
+
+    {"nombre": "expresso", 
+    "tipo": "bebida", 
+    "precio": 15,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Esspreso.jpg"
+    },
+
+
+    {"nombre": "clasico_barista", 
+    "tipo": "bebida", 
+    "precio": 31,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Clasico-Barista-correcto.jpg"
+    },
+
+    {"nombre": "moccafrappee", 
+    "tipo": "bebida", 
+    "precio": 31,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Mocca-Frappe.jpg"
+    },
+
+
+    {"nombre": "caramelofrappee", 
+    "tipo": "bebida", 
+    "precio": 31,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Caramelo-Frappe.jpg"
+    },
+
+    {"nombre": "chocomaniaco", 
+    "tipo": "bebida", 
+    "precio": 33,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Chocomaniaco.jpg"
+    },
+
+    {"nombre": "whitechocolate", 
+    "tipo": "bebida", 
+    "precio": 30,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/White-Chocolate-Snow.jpg"
+    },
+
+
+    {"nombre": "te_matcha_latte", 
+    "tipo": "bebida", 
+    "precio": 34,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Matcha-Frappe.jpg"
+    },
+
+    {"nombre": "smoothie", 
+    "tipo": "bebida", 
+    "precio": 34,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Smothie-Berries.jpg"
+    },
+
+    {"nombre": "batido", 
+    "tipo": "bebida", 
+    "precio": 34,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Batido-Fresa.jpg"
+    },
+
+    {
+        "nombre": "chapin_con_queso_huevo",
+        "tipo": "comida",
+        "precio": 21,
+        "img": "https://cafebarista.com.gt/wp-content/uploads/2023/04/Chapina-con-Queso-y-Huevo.jpg"
+    },
+    {
+        "nombre": "derretido",
+        "tipo": "comida",
+        "precio": 19,
+        "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Derretido.jpg"
+    },
+    {
+        "nombre": "buongiorno",
+        "tipo": "comida",
+        "precio": 26,
+        "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Buongiorno.jpg"
+    },
+    {
+        "nombre": "cottage_light",
+        "tipo": "comida",
+        "precio": 26,
+        "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Cottage-Light.jpg"
+    },
+    {
+        "nombre": "primavera",
+        "tipo": "comida",
+        "precio": 28,
+        "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Primavera.jpg"
+    },
+    {
+        "nombre": "huevo_y_tocino",
+        "tipo": "comida",
+        "precio": 29,
+        "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Huevo-y-Tocino.jpg"
+    },
+
+    {
+          "nombre": "guatemala",
+          "tipo": "comida",
+          "precio": 40,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Guatemala.jpg"
+    },
+
+    {
+        "nombre": "azienda",
+        "tipo": "comida",
+        "precio": 31,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Azienda.jpg"
+    },
+    {
+        "nombre": "campechano",
+        "tipo": "comida",
+        "precio": 31,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Campechano.jpg"
+    },
+    {
+        "nombre": "croissant_jamon_queso_aguacate",
+        "tipo": "comida",
+        "precio": 38,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Croissant-Jamones-Queso-y-Aguacae.jpg"
+    },
+    {
+        "nombre": "croissant_huevo_queso_tocino",
+        "tipo": "comida",
+        "precio": 35,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Croissant-Huevo-y-Tocino.jpg"
+    },
+    {
+        "nombre": "croissant_chapin",
+        "tipo": "comida",
+        "precio": 35,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Croissant-Chapin.jpg"
+    },
+
+    {
+        "nombre": "panini_pavoblt",
+        "tipo": "comida",
+        "precio": 51,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Pavo-BLT.jpg"
+    },
+    {
+        "nombre": "panini_pollo_mediterraneo",
+        "tipo": "comida",
+        "precio": 51,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Pollo-Mediterraneo.jpg"
+    },
+    {
+        "nombre": "panini_pollo_perejil",
+        "tipo": "comida",
+        "precio": 51,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Pollo-Perejil.jpg"
+    },
+    {
+        "nombre": "panini_pollo_genova_al_pesto",
+        "tipo": "comida",
+        "precio": 51,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Pollo-Genova-al-Pesto.jpg"
+    },
+
+    {
+        "nombre": "baguette_ensalada_de_pollo_aguacate",
+        "tipo": "comida",
+        "precio": 40,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Baguette-Ensalada-de-Pollo-Aguacate.jpg"
+    },
+    {
+        "nombre": "baguette_pavo_chimichurri",
+        "tipo": "comida",
+        "precio": 40,
+          "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Baguette-Pavo-Chimichurri.jpg"
+    },
+
+
+  {
+    "nombre": "sopa_frijol",
+    "tipo": "comida",
+    "precio": 31,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Sopa-de-Frijol.jpg"
+  },
+  {
+    "nombre": "sopa_azteca",
+    "tipo": "comida",
+    "precio": 21,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Sopa-Azteca.jpg"
+  },
+    {
+    "nombre": "sopa_pollo",
+    "tipo": "comida",
+    "precio": 21,
+    "img":"https://cafebarista.com.gt/wp-content/uploads/2023/04/Sopa-de-Pollo.jpg"
+  }
+
+]
+
+
+}
