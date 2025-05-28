@@ -1,0 +1,214 @@
+{
+  "restaurante": "&Cafe",
+  "productos": [
+    {
+      "nombre": "espresso",
+      "tipo": "bebida",
+      "precio": "17",
+      "img": "https://www.andcafe.com/images/virtuemart/product/espresso.jpg"
+
+    },
+    {
+      "nombre": "cortado",
+      "tipo": "bebida",
+      "precio": "18",
+      "img": "https://www.andcafe.com/images/virtuemart/product/cortado.jpg"
+
+    },
+    {
+      "nombre": "flat_white",
+      "tipo": "bebida",
+      "precio": "16", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/flat%20white_0x300.jpg"
+
+    },
+    {
+      "nombre": "capuccino",
+      "tipo": "bebida",
+      "precio": "25",
+      "img": "https://www.andcafe.com/images/virtuemart/product/cappuccino.jpg"
+
+    },
+    {
+      "nombre": "latte",
+      "tipo": "bebida",
+      "precio": "32",
+      "img": "https://www.andcafe.com/images/virtuemart/product/lattee.jpg"
+
+    },
+    {
+      "nombre": "caramel_latte",
+      "tipo": "bebida",
+      "precio": "32",
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/caramell%20latte_0x300.jpg"
+
+    },
+    {
+      "nombre": "vainilla_frost",
+      "tipo": "bebida",
+      "precio": "32",
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/vanilla%20frost_0x300.jpg"
+
+    },
+    {
+      "nombre": "mocca",
+      "tipo": "bebida",
+      "precio": "32", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/mocca_0x300.jpg"
+    },
+    {
+      "nombre": "white_mocca",
+      "tipo": "bebida",
+      "precio": "32",
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/white%20mocca_0x300.jpg"
+    },
+    {
+      "nombre": "mocca_mint",
+      "tipo": "bebida",
+      "precio": "32",
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/chocolate%20mint_0x300.jpg"
+    },
+    {
+      "nombre": "hot_chocolate",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/hot%20chocolate_0x300.jpg"
+    },
+    {
+      "nombre": "white_chocolate_frost",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/white%20chocolate%20frost%20copy_0x300.jpg"
+    },
+    {
+      "nombre": "chocolate_mint_frost",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/chocolate%20mint%20frost_0x300.jpg"
+    },
+    {
+      "nombre": "vanilla_frost",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/vanilla%20frost_0x300.jpg"
+    },
+    {
+      "nombre": "mocca_frost",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/mocca%20frost_0x300.jpg"
+    },
+    {
+      "nombre": "berries_yogen",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/berries%20yogen_0x300.jpg"
+    },{
+      "nombre": "i_am_mango",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/yogen%20mango_0x300.jpg"
+    },
+    {
+      "nombre": "orange_detox",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/orange%20detox_0x300.jpg"
+    },
+    {
+      "nombre": "green_detox",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/green%20detox_0x300.jpg"
+    },
+    // Separacion 
+    {
+      "nombre": "muffin_de_salchicha_y_huevo",
+      "tipo": "comida",
+      "precio": "25",
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/de-huevito-y-jamon_0x300.jpg"
+
+    },
+    {
+      "nombre": "monkey_sandwich",
+      "tipo": "comida",
+      "precio": "28",
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/monkey_0x300.jpg"
+
+    },
+    {
+      "nombre": "sanwich_de_huevito_y_queso",
+      "tipo": "comida",
+      "precio": "28",
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/fijolito-y-huevo_0x300.jpg"
+
+    },
+    {
+      "nombre": "sandwich_italiano",
+      "tipo": "comida",
+      "precio": "38",
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/italiano_0x300.jpg"
+
+    },
+    {
+      "nombre": "melts",
+      "tipo": "comida",
+      "precio": "28", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/melt-de-peperonie_0x300.jpg"
+    },
+    {
+      "nombre": "sandwich_roasbeff",
+      "tipo": "comida",
+      "precio": "38", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/roastbeef_0x300.jpg"
+    },
+    {
+      "nombre": "white_chocolate_frost",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/white%20chocolate%20frost%20copy_0x300.jpg"
+    },
+    {
+      "nombre": "chocolate_mint_frost",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/chocolate%20mint%20frost_0x300.jpg"
+    },
+    {
+      "nombre": "vanilla_frost",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/vanilla%20frost_0x300.jpg"
+    },
+    {
+      "nombre": "mocca_frost",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/mocca%20frost_0x300.jpg"
+    },
+    {
+      "nombre": "berries_yogen",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/berries%20yogen_0x300.jpg"
+    },{
+      "nombre": "i_am_mango",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/yogen%20mango_0x300.jpg"
+    },
+    {
+      "nombre": "orange_detox",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/orange%20detox_0x300.jpg"
+    },
+    {
+      "nombre": "green_detox",
+      "tipo": "bebida",
+      "precio": "29", 
+      "img": "https://www.andcafe.com/images/virtuemart/product/resized/green%20detox_0x300.jpg"
+    }
+
+  ]
+}

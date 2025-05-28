@@ -1,0 +1,177 @@
+{
+  "restaurante": "Panitos",
+  "productos": [
+    {
+      "nombre": "crema_de_papa_con_puerro",
+      "tipo": "comida",
+      "precio": "25",
+      "img": "https://www.justspices.es/media/recipe/resized/510x510/recipe/crema-puerros-patatas.jpg"
+
+    },
+    {
+      "nombre": "sopa_de_tomate",
+      "tipo": "comida",
+      "precio": "35",
+      "img": "https://cdn0.uncomo.com/es/posts/3/0/9/como_hacer_sopa_de_tomate_casera_25903_600_square.jpg"
+
+    },
+    {
+      "nombre": "carne_adobada_con_queso_auacate_y_pico_de_gallo",
+      "tipo": "comida",
+      "precio": "40", 
+      "img": "https://blog.pizcadesabor.com/wp-content/uploads/2017/07/Adobo-tacos-al-pastor-3-600x600.jpg"
+
+    },
+    {
+      "nombre": "sopa_de_tortilla",
+      "tipo": "comida",
+      "precio": "30",
+      "img": "https://sazonsula.com/wp-content/uploads/2023/02/830x830_0002_Spa-de-Tortilla.jpg"
+
+    },
+    {
+      "nombre": "avena_cremosa_con_panela_y_toppings",
+      "tipo": "comida",
+      "precio": "15", 
+      "img": "https://cocinaconmichela.com/wp-content/uploads/2023/05/avena-thumb-for-blog.png"
+
+    },
+    {
+      "nombre": "burrito_de_desayuno",
+      "tipo": "comida",
+      "precio": "25",
+      "img": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/9856d7f0896b60f0f44cf332f58a0c9a.jpg"
+
+    },
+    {
+      "nombre": "rollitos_de_panqueques_de_avena",
+      "tipo": "comida",
+      "precio": "25",
+      "img": "https://cdn0.recetasgratis.net/es/posts/1/0/8/pancakes_de_avena_fitness_61801_600_square.jpg"
+
+    },
+    {
+      "nombre": "wrap_de_huevo_queso_y_tocino",
+      "tipo": "comida",
+      "precio": "17",
+      "img": "https://wendysmx.net/imgmenu/20181031051450.jpg"
+
+    },
+    {
+      "nombre": "wrap_de_huevo_frijol_salsa_de_cilantro",
+      "tipo": "comida",
+      "precio": "17",
+      "img": "https://sargentopimienta.com.mx/herdez/wp-content/uploads/2022/08/Burrito-de-Huevo-con-Tocino-y-Guacamoles.jpg"
+
+    },
+    {
+      "nombre": "crema_de_frijol_y_queso_panela_asado",
+      "tipo": "comida",
+      "precio": "20",
+      "img": "https://cdn7.kiwilimon.com/recetaimagen/27064/640x640/24821.jpg.webp"
+
+    },
+    {
+      "nombre": "chorizo_queso_y_huevo",
+      "tipo": "comida",
+      "precio": "20", 
+      "img": "https://comedera.com/wp-content/uploads/sites/9/2021/03/shutterstock_1379830838-huevos-con-chorizo.jpg?w=500&h=500&crop=1"
+    },
+    {
+      "nombre": "wrap_de_frijol",
+      "tipo": "comida",
+      "precio": "12",
+      "img": "https://comedera.com/wp-content/uploads/sites/9/2024/07/Wrap-de-frijoles-negros-y-maiz-1.jpg?w=500&h=500&crop=1"
+    },
+    {
+      "nombre": "ensalada_de_pollo",
+      "tipo": "comida",
+      "precio": "15",
+      "img": "https://embed.widencdn.net/img/mccormick/q9e2sq0ys6/800x800px/Ensalada%20de%20Pollo%20a%20la%20Parrilla.jpg?crop=true&q=80&color=ffffffff&u=qwwekl"
+    },
+    {
+      "nombre": "wrap_3_quesos_y_jamon",
+      "tipo": "comida",
+      "precio": "19", 
+      "img": "https://content-cocina.lecturas.com/medio/2021/08/06/enrollados-de-coliflor-de-ensaladilla-rusa-y-tortilla-wrap-mixto-de-solomillo-y-aguacate-de-atun-con-mayonesa_bd187e66_600x600.jpg"
+    },
+    {
+      "nombre": "pollo pesto",
+      "tipo": "comida",
+      "precio": "26",
+      "img": "https://img-global.cpcdn.com/recipes/e0e8ddb3e249ad46/400x400cq90/photo.jpg"
+    },
+    {
+      "nombre": "Bowl de la casa",
+      "tipo": "comida",
+      "precio": "32", 
+      "img": "https://blog.pizcadesabor.com/wp-content/uploads/2023/01/Bowl-miso-3-500x500.jpg"
+    },
+    {
+      "nombre": "limonada",
+      "tipo": "bebida",
+      "precio": "10", 
+      "img": "https://www.guatemala.com/fotos/2023/07/Limonadas-guatemaltecas-con-agua-mineral-para-refrescarte-en-un-dia-caluroso5.jpg"
+    },
+    {
+      "nombre": "limonada_con_sandía",
+      "tipo": "bebida",
+      "precio": "10",
+      "img": "https://www.guatemala.com/fotos/2023/07/Limonadas-guatemaltecas-con-agua-mineral-para-refrescarte-en-un-dia-caluroso7.jpg"
+    },
+    {
+      "nombre": "limonada_con_hierbabuena",
+      "tipo": "bebida",
+      "precio": "10",
+      "img": "https://tofuu.getjusto.com/orioneat-local/resized2/Fdr7xJtvkdkmbK5zC-800-800.webp"
+    },
+    {
+      "nombre": "pretzel",
+      "tipo": "comida",
+      "precio": "10",
+      "img": "https://sakiproducts.com/cdn/shop/articles/20221215161859-pretzels-bread-bread-machine-recipe-blog_800x800.webp?v=1671533427"
+    },
+    {
+      "nombre": "croissant_jamón_y_queso",
+      "tipo": "comida",
+      "precio": "12",
+      "img": "https://macchiatopanama.com/wp-content/uploads/2023/07/Croissant-Jamon-y-Queso.png"
+    },
+    {
+      "nombre": "donas",
+      "tipo": "comida",
+      "precio": "10",
+      "img": "https://cdn7.kiwilimon.com/brightcove/8381/640x640/8381.jpg.webp"
+    },
+    {
+      "nombre": "galleta_chocolate",
+      "tipo": "comida",
+      "precio": "8",
+      "img": "https://www.paulinacocina.net/wp-content/uploads/2022/04/galletas-de-chocolate-receta-800x800.jpg"
+    },
+    {
+      "nombre": "galleta_de_vainilla",
+      "tipo": "comida",
+      "precio": "8",
+      "img": "https://cdn0.uncomo.com/es/posts/8/5/6/como_hacer_galletas_de_vainilla_50658_600_square.jpg"
+    },
+    {
+      "nombre": "galleta_chispas_de_chocolate",
+      "tipo": "comida",
+      "precio": "8",
+      "img": "https://cdn7.kiwilimon.com/recetaimagen/31079/640x640/35433.jpg.jpg"
+    },
+    {
+      "nombre": "galleta_de_avena",
+      "tipo": "comida",
+      "precio": "8", 
+      "img": "https://osojimix.com/wp-content/uploads/2021/11/Galletas-de-avena-con-chocolate-Pa%CC%81gina-500x500.jpg"
+    },
+    {
+      "nombre": "brownie",
+      "tipo": "comida",
+      "precio": "12",
+      "img": "https://www.cocinista.es/download/bancorecursos/recetas/receta-brownies.jpg"
+    }
+  ]
+}
