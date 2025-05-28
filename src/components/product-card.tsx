@@ -83,7 +83,7 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
                     </Link>
                     <div className="flex gap-2 items-center">
                       <Badge variant={'outline'} className="border-green-500 text-green-400 text-xs">
-                        Q {producto.precio || producto.precio?.low}
+                        Q {producto.precio || 0}
                       </Badge>
                       {userId && (
                         <Button 
