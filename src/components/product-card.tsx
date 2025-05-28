@@ -84,7 +84,7 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
                     </Link>
                     <div className="flex gap-2 items-center">
                       <Badge variant={'outline'} className="border-green-500 text-green-400 text-xs">
-                        Q {producto.precio?.low}
+                        Q {typeof producto.precio === 'number' ? producto.precio : producto.precio.low}
                       </Badge>
                       {userId && (
                         <Button 
