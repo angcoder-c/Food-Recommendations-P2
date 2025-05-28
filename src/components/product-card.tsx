@@ -57,8 +57,9 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
     }, [producto.likes])
 
     return (
-        <Card
-        className="bg-gray-800 border-gray-700 hover:border-green-500 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20 group"
+        <Card 
+            style={{ overflow: "hidden" }}
+            className="bg-gray-800 border-gray-700 hover:border-green-500 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20 group"
         >
             <CardContent className="p-0">
                 <div className="h-32 rounded-t-lg flex items-center justify-center transition-colors overflow-hidden">
