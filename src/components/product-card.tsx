@@ -19,45 +19,29 @@ export type Producto = {
 }
 
 export default function ProductCard ({ producto } : { producto : Producto }) {
-    const { userId, likesum, likeCount } = useAuthStore()
+  console.log(producto)
+    const { userId, likesum, likeCount, likedProducts, addLikedProduct } = useAuthStore()
     const [currentLikes, setCurrentLikes] = useState(producto.likes)
-    const [hasLiked, setHasLiked] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
 
-    const checkIfUserLiked = async () => {
-      if (!userId) return;
-      
-      try {
-        const res = await fetch('/api/user/check-user-like', {
-          method: 'POST',
-          body: JSON.stringify({ usuarioId: userId, productoNombre: producto.nombre })
-        })
-        const data = await res.json()
-        
-        if (res.ok) {
-          setHasLiked(data.hasLiked || false)
-        }
-      } catch (error) {
-        console.error('ERROR:', error)
-      }
-    }
+    const hasLiked = likedProducts.includes(producto.nombre)
+
 
     const likeProduct = async (productName: string) => {
-      if (!userId || hasLiked || isLoading) return;
-      
+      if (!userId || hasLiked || isLoading) return
+
       setIsLoading(true)
-      
+
       try {
         const res = await fetch('/api/user/user-like-product', {
           method: 'POST',
-          body: JSON.stringify({ usuarioId: userId, productoNombre: productName })
+          body: JSON.stringify({ usuarioId: userId, productoNombre: productName }),
         })
         const data = await res.json()
-      
+
         if (res.ok) {
-          const newLikes = data.newLikes || currentLikes + 1
-          setCurrentLikes(newLikes) 
-          setHasLiked(true)
+          setCurrentLikes(data.newLikes || currentLikes + 1)
+          addLikedProduct(productName)
           likesum(likeCount + 1)
         } else {
           console.error(data.error || 'request error')
@@ -68,10 +52,6 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
         setIsLoading(false)
       }
     }
-
-    useEffect(() => {
-      checkIfUserLiked()
-    }, [userId, producto.nombre])
 
     useEffect(() => {
       setCurrentLikes(producto.likes)
@@ -104,7 +84,7 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
                     </Link>
                     <div className="flex gap-2 items-center">
                       <Badge variant={'outline'} className="border-green-500 text-green-400 text-xs">
-                        Q {producto.precio}
+                        Q {producto.precio?.low}
                       </Badge>
                       {userId && (
                         <Button 
