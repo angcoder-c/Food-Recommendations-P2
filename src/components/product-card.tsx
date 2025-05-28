@@ -19,7 +19,6 @@ export type Producto = {
 }
 
 export default function ProductCard ({ producto } : { producto : Producto }) {
-  console.log(producto)
     const { userId, likesum, likeCount, likedProducts, addLikedProduct } = useAuthStore()
     const [currentLikes, setCurrentLikes] = useState(producto.likes)
     const [isLoading, setIsLoading] = useState(false)
@@ -84,7 +83,7 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
                     </Link>
                     <div className="flex gap-2 items-center">
                       <Badge variant={'outline'} className="border-green-500 text-green-400 text-xs">
-                        Q {producto.precio?.low}
+                        Q {producto.precio || producto.precio?.low}
                       </Badge>
                       {userId && (
                         <Button 
