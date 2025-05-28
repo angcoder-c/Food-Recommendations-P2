@@ -13,7 +13,7 @@ export type Producto = {
     nombre : string,
     restaurante : string,
     tipo : string,
-    precio : number,
+    precio : number | {low : number, high : number},
     img: string,
     likes : number
 }
@@ -30,14 +30,14 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
       if (!userId || hasLiked || isLoading) return
 
       setIsLoading(true)
-
+      
       try {
         const res = await fetch('/api/user/user-like-product', {
           method: 'POST',
           body: JSON.stringify({ usuarioId: userId, productoNombre: productName }),
         })
         const data = await res.json()
-
+        
         if (res.ok) {
           setCurrentLikes(data.newLikes || currentLikes + 1)
           addLikedProduct(productName)
@@ -83,7 +83,7 @@ export default function ProductCard ({ producto } : { producto : Producto }) {
                     </Link>
                     <div className="flex gap-2 items-center">
                       <Badge variant={'outline'} className="border-green-500 text-green-400 text-xs">
-                        Q {producto.precio || 0}
+                        Q {producto.precio?.low}
                       </Badge>
                       {userId && (
                         <Button 
