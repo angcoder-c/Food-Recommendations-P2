@@ -1,0 +1,348 @@
+{
+  "restaurante": "Gitane",
+  "productos": [
+        {
+          "nombre": "wrap_sunset_individual",
+          "tipo": "comida",
+          "precio": "30",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/wrap-sunset.png"
+        },
+        {
+          "nombre": "wrap_cesar_individual",
+          "tipo": "comida",
+          "precio": "30",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/wrap-cesar.png"
+        },
+        {
+          "nombre": "wrap_chicken_mustard_individual",
+          "tipo": "comida",
+          "precio": "32",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/wrap-chicken-mustard.png"
+        },
+        {
+          "nombre": "wrap_pollo_y_tocino_individual",
+          "tipo": "comida",
+          "precio": "32", 
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/wrap-pollo-y-tocino.png"
+        },
+        {
+          "nombre": "wrap_caprece_individual",
+          "tipo": "comida",
+          "precio": "30",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/wrap-caprece.png"
+        },
+        {
+          "nombre": "bbq_burger_individual",
+          "tipo": "comida",
+          "precio": "30",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/bbq-burger.png"
+        },
+        {
+          "nombre": "chicken_bbq_burger_individual",
+          "tipo": "comida",
+          "precio": "31",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/chicken-bbq-burger.png"
+        },
+        {
+          "nombre": "tocino_burger_individual",
+          "tipo": "comida",
+          "precio": "31", 
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/tocino-burger.png"
+        },
+        {
+          "nombre": "chicken_cesar_burger_individual",
+          "tipo": "comida",
+          "precio": "31", 
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/chicken-cesar-burger.png"
+        },
+        {
+          "nombre": "chicken_ranch_burger_individual",
+          "tipo": "comida",
+          "precio": "31",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/chicken-ranch-burger.png"
+        },
+        {
+          "nombre": "brazo_gitano_porcion",
+          "tipo": "comida",
+          "precio": "16",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/brazo-gitano.png"
+        },
+        {
+          "nombre": "brownie_unidad",
+          "tipo": "comida",
+          "precio": "11",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/exportar.png"
+        },
+        {
+          "nombre": "galletas_sabores",
+          "tipo": "comida",
+          "precio": "14",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/galleta.png"
+        },
+        {
+          "nombre": "Cheesecake_con_topping_de_fresa_porcion",
+          "tipo": "comida",
+          "precio": "23", 
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/cheesecake.png"
+        },
+        {
+          "nombre": "pastel_moka_porcion",
+          "tipo": "comida",
+          "precio": "23",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/pastel-moka.png"
+        },
+        {
+          "nombre": "zeppelin_porcion",
+          "tipo": "comida",
+          "precio": "16",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/zepellin.png"
+        },
+        {
+          "nombre": "gipsy_porcion",
+          "tipo": "comida",
+          "precio": "15",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/gypsi.png"
+
+        },
+        {
+          "nombre": "cappuccino",
+          "tipo": "bebida",
+          "precio": "27",
+          "img":"https://cafegitane.com/wp-content/uploads/2023/06/cappuccino.png" 
+        },
+        {
+          "nombre": "te_chai",
+          "tipo": "bebida",
+          "precio": "35",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/te-chai.png"
+        },
+        {
+          "nombre": "caramel_latte",
+          "tipo": "bebida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/07/caramel-latte.png"
+        },
+        {
+          "nombre": "mochaccino",
+          "tipo": "bebida",
+          "precio": "35",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/mochaccino.png"
+        },
+        {
+          "nombre": "matcha_latte",
+          "tipo": "bebida",
+          "precio": "36",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/matcha-latte.png"
+        },
+        {
+          "nombre": "mocha",
+          "tipo": "bebida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/mocha.png"
+        },
+        {
+          "nombre": "white_mocha",
+          "tipo": "bebida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/white-mocha.png"
+        },
+        {
+          "nombre": "chocomint_latte",
+          "tipo": "bebida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/chocomint-latte.png"
+        },
+        {
+          "nombre": "granita_de_frutas",
+          "tipo": "bebida",
+          "precio": "25",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/granita-de-frutas.png"
+        },
+        {
+          "nombre": "granita_de_cafe",
+          "tipo": "bebida",
+          "precio": "27",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/granita-de-cafe.png"
+        },
+        {
+          "nombre": "mocha_dream",
+          "tipo": "bebida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/mocha-dream.png"
+        },
+        {
+          "nombre": "oreo_dream",
+          "tipo": "bebida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/oreo-dream-granita.png"
+        },
+        {
+          "nombre": "matcha_frappe",
+          "tipo": "bebida",
+          "precio": "36",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/matcha-frappe.png"
+        },
+        {
+          "nombre": "white_dream",
+          "tipo": "bebida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/white-dream.png"
+        },
+        {
+          "nombre": "chocomint_dream",
+          "tipo": "bebida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/chocomint-dream.png"
+        },
+        {
+          "nombre": "Te_chai_frappe",
+          "tipo": "bebida",
+          "precio": "35",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/te-chai-frappe.png"
+        },
+        {
+          "nombre": "caramel_dream",
+          "tipo": "bebida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/caramel-dream.png"
+        },
+        {
+          "nombre": "tropical",
+          "tipo": "bebida",
+          "precio": "30",
+          "img": "https://cafegitane.com/wp-content/uploads/2018/07/tropical-opt.jpg"
+        },
+        {
+          "nombre": "booster",
+          "tipo": "bebida",
+          "precio": "30",
+          "img": "https://cafegitane.com/wp-content/uploads/2018/07/booster-opt.jpg"
+        },
+        {
+          "nombre": "berry_cool",
+          "tipo": "bebida",
+          "precio": "30",
+          "img": "https://cafegitane.com/wp-content/uploads/2018/07/berry-cool-opt.jpg"
+        },
+        {
+          "nombre": "croissant",
+          "tipo": "comida",
+          "precio": "22",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/croissant.png"
+        },
+        {
+          "nombre": "wrap_mananero_individual",
+          "tipo": "comida",
+          "precio": "29",
+          "img":"https://cafegitane.com/wp-content/uploads/2023/06/wrap-mananero.png"
+        },
+        {
+          "nombre": "Pan_chapin_con_huevo_individual",
+          "tipo": "comida",
+          "precio": "24",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/pan-chapin-con-huevo-.png"
+        },
+        {
+          "nombre": "muffin_deluxe_individual",
+          "tipo": "comida",
+          "precio": "25",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/muffin-deluxe.png"
+        },
+        {
+          "nombre": "muffin_chapin_individual",
+          "tipo": "comida",
+          "precio": "25",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/muffin-chapin.png"
+        },
+        {
+          "nombre": "muffin_ranchero_individual",
+          "tipo": "comida",
+          "precio": "25", 
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/muffin-ranchero.png"
+        },
+        {
+          "nombre": "flatbread_de_jamon_queso_y_huevo_individual",
+          "tipo": "comida",
+          "precio": "27",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/flatbread-de-jamon-queso-y-huevo.png"
+        },
+        {
+          "nombre": "burrito_de_salchicha_y_huevo_individual",
+          "tipo": "comida",
+          "precio": "29",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/burrito-de-salchicha-y-huevo.png"
+        },
+        {
+          "nombre": "chicken_quesadilla_individual",
+          "tipo": "comida",
+          "precio": "27",
+          "img": "https://cafegitane.com/wp-content/uploads/2018/07/chicken-quesadilla-opt.jpg"
+        },
+        {
+          "nombre": "Sandwich_blt_individual",
+          "tipo": "comida",
+          "precio": "32", 
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/sandwich-blt.png"
+        },
+        {
+          "nombre": "gitano_deluxe_de_pollo_individual",
+          "tipo": "comida",
+          "precio": "34", 
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/gitano-deluxe-de-pollo.png"
+        },
+        {
+          "nombre": "gitano_deluxe_de_jamon_individual",
+          "tipo": "comida",
+          "precio": "32",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/gitano-deluxe-de-jamon.png"
+        },
+        {
+          "nombre": "chicken_quesadilla_con_aguacate_individual",
+          "tipo": "comida",
+          "precio": "32",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/chicken-quesadilla-con-aguacate.png"
+        },
+        {
+          "nombre": "sandwich_chicken_cheddar_individual",
+          "tipo": "comida",
+          "precio": "32",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/sandwich-chicken-cheddar.png"
+        },
+        {
+          "nombre": "ensalada_cesar_individual",
+          "tipo": "comida",
+          "precio": "33",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/ensalada-cesar.png"
+        },
+        {
+          "nombre": "ensalada_cesar_con_pollo_individual",
+          "tipo": "comida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/ensalada-cesar-con-pollo.png"
+        },
+        {
+          "nombre": "ensalada_chicken_mustard_individual",
+          "tipo": "comida",
+          "precio": "34",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/ensalada-chicken-mustard.png"
+        },
+        {
+          "nombre": "ensalada_verano_individual",
+          "tipo": "comida",
+          "precio": "34", 
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/ensalada-verano.png"
+        },
+        {
+          "nombre": "ensalada_latina_individual",
+          "tipo": "comida",
+          "precio": "33",
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/ensalada-latina.png"
+        },
+        {
+          "nombre": "ensalada_europea_individual",
+          "tipo": "comida",
+          "precio": "34", 
+          "img": "https://cafegitane.com/wp-content/uploads/2023/06/ensalada-europea.png"
+        }
+  ]
+}
