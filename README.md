@@ -213,14 +213,15 @@ La aplicación permite:
 - [Definición de esquema de base de dato](https://github.com/angcoder-c/Food-Recommendations-P2/blob/main/db/docs.md)
 
 - [Algoritmo de recomendaciones user-based](./db/user-based.md)
-**2. Componentes obtenidos de:**
--  [Front-end desarrollado en base a](https://ui.shadcn.com/)
+
+
 
 
 ## Link al proyecto por vercel:
   [recomendation-page](https://food-recommendations-p2.vercel.app/)
 ## Referencias de componentes:
-- 
+**2. Componentes obtenidos de:**
+-  [Front-end desarrollado en base a](https://ui.shadcn.com/)
 ¡Contribuciones y sugerencias son bienvenidas!
 
 
