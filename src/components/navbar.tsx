@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { useAuthStore } from '@/stores/useAuthStore';
+import Image from 'next/image';
+import faviccon from './../app/favicon.ico'
 
 export default function Navbar() {
   const { user, logout } = useAuthStore();
@@ -12,7 +14,7 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div>
             <Link href={'/'} className="text-white font-medium">
-              Inicio
+              <Image src={faviccon} alt={'logo'} height={20} width={20}/>
             </Link>
           </div>
           <div className="flex items-center space-x-4">

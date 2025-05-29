@@ -12,34 +12,100 @@ La aplicación permite:
 
 ## Distribución del Proyecto
 
-```
-├── components/                # Componentes reutilizables de React
-│   ├── gird-products.tsx
-│   ├── navbar.tsx
-│   └── product-card.tsx
-│   └── ui/                    # Componentes UI (botones, tarjetas, formularios, etc.)
-├── db/                        # Documentación y esquemas de la base de datos
-│   ├── docs.md
-│   └── user-based.md
-├── menus_restaurantes/        # Menús de restaurantes en formato JSON
-├── public/                    # Archivos estáticos e imágenes
-├── src/
-│   ├── app/
-│   │   ├── api/               # Endpoints API (Next.js Route Handlers)
-│   │   │   ├── products/
-│   │   │   ├── restaurant/
-│   │   │   └── user/
-│   │   ├── lib/               # Conexión a Neo4j y utilidades
-│   │   ├── login/             # Página de login
-│   │   ├── register/          # Página de registro
-│   │   └── restaurant/        # Página principal de restaurantes
-│   ├── components/            # Componentes compartidos
-│   ├── lib/                   # Utilidades generales
-│   └── stores/                # Manejo de estado global
-├── next.config.ts             # Configuración de Next.js
-├── package.json               # Dependencias y scripts
-├── tsconfig.json              # Configuración de TypeScript
-└── README.md                  # Este archivo
+```plaintext
+📦 
+├─ .gitignore
+├─ README.md
+├─ components.json
+├─ db
+│  ├─ docs.md
+│  └─ user-based.md
+├─ menus_restaurantes
+│  ├─ &Cafe.json
+│  ├─ Barista.json
+│  ├─ Gitane.json
+│  ├─ GoGreen.json
+│  └─ Panitos.json
+├─ next-env.d.ts
+├─ next.config.ts
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.mjs
+├─ public
+│  ├─ file.svg
+│  ├─ globe.svg
+│  ├─ logoback.png
+│  ├─ logopng.png
+│  ├─ next.svg
+│  ├─ uvgLogo.png
+│  ├─ vercel.svg
+│  └─ window.svg
+├─ src
+│  ├─ app
+│  │  ├─ api
+│  │  │  ├─ ping
+│  │  │  │  └─ route.ts
+│  │  │  ├─ products
+│  │  │  │  ├─ delete-product
+│  │  │  │  │  └─ route.ts
+│  │  │  │  └─ get-products-more-likes
+│  │  │  │     └─ route.ts
+│  │  │  ├─ restaurant
+│  │  │  │  ├─ add-products
+│  │  │  │  │  └─ route.ts
+│  │  │  │  ├─ create-restaurant
+│  │  │  │  │  └─ route.ts
+│  │  │  │  ├─ delete-restaurant
+│  │  │  │  │  └─ route.ts
+│  │  │  │  ├─ get-all
+│  │  │  │  │  └─ route.ts
+│  │  │  │  └─ get-products
+│  │  │  │     └─ route.ts
+│  │  │  └─ user
+│  │  │     ├─ check-user-like
+│  │  │     │  └─ route.ts
+│  │  │     ├─ create-user
+│  │  │     │  └─ route.ts
+│  │  │     ├─ delete-user
+│  │  │     │  └─ route.ts
+│  │  │     ├─ get-recomendations
+│  │  │     │  └─ route.ts
+│  │  │     ├─ get-users
+│  │  │     │  └─ route.ts
+│  │  │     ├─ login
+│  │  │     │  └─ route.ts
+│  │  │     ├─ register
+│  │  │     │  └─ route.ts
+│  │  │     └─ user-like-product
+│  │  │        └─ route.ts
+│  │  ├─ favicon.ico
+│  │  ├─ globals.css
+│  │  ├─ layout.tsx
+│  │  ├─ lib
+│  │  │  └─ neo4j.ts
+│  │  ├─ login
+│  │  │  └─ page.tsx
+│  │  ├─ page.tsx
+│  │  ├─ register
+│  │  │  └─ page.tsx
+│  │  └─ restaurant
+│  │     └─ page.tsx
+│  ├─ components
+│  │  ├─ gird-products.tsx
+│  │  ├─ navbar.tsx
+│  │  ├─ product-card.tsx
+│  │  └─ ui
+│  │     ├─ badge.tsx
+│  │     ├─ button.tsx
+│  │     ├─ card.tsx
+│  │     ├─ form.tsx
+│  │     ├─ input.tsx
+│  │     └─ label.tsx
+│  ├─ lib
+│  │  └─ utils.ts
+│  └─ stores
+│     └─ useAuthStore.ts
+└─ tsconfig.json
 ```
 
 ## API Endpoints principales
