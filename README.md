@@ -221,7 +221,6 @@ La aplicación permite:
   [recomendation-page](https://food-recommendations-p2.vercel.app/)
 ## Referencias de componentes:
 **2. Componentes obtenidos de:**
--  [Front-end desarrollado en base a](https://ui.shadcn.com/)
-¡Contribuciones y sugerencias son bienvenidas!
+- Front desarrollado en base a los componentes de: [Shadcn](https://ui.shadcn.com/) 
 
 
