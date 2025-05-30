@@ -1,0 +1,155 @@
+{
+  "restaurante": "Sarita",
+  "productos": [
+    {
+      "nombre": "secretos_de_bosque",
+      "tipo": "comida",
+      "precio": "35",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/SecretosBosque001.png"
+
+    },
+    {
+      "nombre": "banana_twist",
+      "tipo": "comida",
+      "precio": "34",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/BananaTwist.png"
+
+    },
+    {
+      "nombre": "yogufit",
+      "tipo": "comida",
+      "precio": "34", 
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/Yogufit.png"
+
+    },
+    {
+      "nombre": "canasta",
+      "tipo": "comida",
+      "precio": "32",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/CanastaWaffle.png"
+
+    },
+    {
+      "nombre": "sundae_mix",
+      "tipo": "comida",
+      "precio": "32",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/SundaeMix001.png"
+
+    },
+    {
+      "nombre": "waffle_twist",
+      "tipo": "comida",
+      "precio": "27",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/WaffleTwist.png"
+
+    },
+    {
+      "nombre": "vaso_twist",
+      "tipo": "comida",
+      "precio": "25",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/VasoTwist.png"
+
+    },
+    {
+      "nombre": "bomba_sarita",
+      "tipo": "comida",
+      "precio": "32", 
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/Bomba.png"
+    },
+    {
+      "nombre": "canasta_sundae",
+      "tipo": "comida",
+      "precio": "26",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/Canasta001.png"
+    },
+    {
+      "nombre": "banana_split",
+      "tipo": "comida",
+      "precio": "30",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/BananaSplit001.png"
+    },
+    {
+      "nombre": "sundae_galleta",
+      "tipo": "comida",
+      "precio": "24", 
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/SundaeGalleta.png"
+    },
+    {
+      "nombre": "topping_sundae",
+      "tipo": "comida",
+      "precio": "20",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/ToppingSundae.png"
+    },
+    {
+      "nombre": "waffle_topping",
+      "tipo": "comida",
+      "precio": "16", 
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/ToppingWaffle.png"
+    },
+    {
+      "nombre": "doble_capucino_doble",
+      "tipo": "comida",
+      "precio": "21",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/WaffleDobleCapuchino.png"
+    },
+    {
+      "nombre": "waffle_doble",
+      "tipo": "comida",
+      "precio": "18",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/WaffleDoble.png"
+    },
+    {
+      "nombre": "milk_shake",
+      "tipo": "bebida",
+      "precio": "16",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/MilkShake.png"
+    },
+    {
+      "nombre": "topping_shake",
+      "tipo": "bebida",
+      "precio": "28",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/ToppingShake001.png"
+    },
+    {
+      "nombre": "nevadas",
+      "tipo": "bebida",
+      "precio": "28",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/Nevadas.png"
+    },
+    {
+      "nombre": "Giga_Galleta",
+      "tipo": "bebida",
+      "precio": "32",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/GigaGalleta.png"
+    },
+    {
+      "nombre": "te_chai",
+      "tipo": "bebida",
+      "precio": "30",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/TeChaiCaliente.png"
+    },
+    {
+      "nombre": "monkey_wafle",
+      "tipo": "comida",
+      "precio": "28",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/MonkeyWaffle.png"
+    },
+    {
+      "nombre": "latte",
+      "tipo": "bebida",
+      "precio": "28", 
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/LateFrio.png"
+    },
+    {
+      "nombre": "americano",
+      "tipo": "bebida",
+      "precio": "18",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/Americano.png"
+    },{
+      "nombre": "expreso",
+      "tipo": "bebida",
+      "precio": "12",
+      "img": "https://heladosarita.com/wp-content/uploads/2024/10/Espresso.png"
+    }
+  ]
+}
