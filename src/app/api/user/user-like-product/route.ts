@@ -16,13 +16,13 @@ export async function POST(request: Request) {
         }
 
         const checkQuery = `
-            MATCH (u:Usuario {id: $usuarioId})
-            MATCH (p:Producto {nombre: $productoNombre})
+            MATCH (u:Usuario {id: "${usuarioId}"})
+            MATCH (p:Producto {nombre: "${productoNombre}"})
             OPTIONAL MATCH (u)-[l:LIKE]->(p)
             RETURN l IS NOT NULL as hasLiked, p.likes as currentLikes
         `;
 
-        const checkResult = await session.run(checkQuery, { usuarioId, productoNombre })
+        const checkResult = await session.run(checkQuery)
         
         if (checkResult.records.length === 0) {
             return NextResponse.json(
@@ -41,8 +41,8 @@ export async function POST(request: Request) {
         }
 
         const likeQuery = `
-            MATCH (u:Usuario {id: $usuarioId})
-            MATCH (p:Producto {nombre: $productoNombre})
+            MATCH (u:Usuario {id: "${usuarioId}")
+            MATCH (p:Producto {nombre: "${productoNombre}")
             MERGE (u)-[l:LIKE]->(p)
             SET l.fecha = datetime()
             SET p.likes = COALESCE(p.likes, 0) + 1
