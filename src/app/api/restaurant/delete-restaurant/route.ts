@@ -21,9 +21,10 @@ export async function DELETE(request: Request) {
 
         const query = `
             MATCH (r:Restaurante {nombre: "${nombre}"})-[:OFRECE]->(p:Producto)
-            DETACH DELETE p
+            DETACH DELETE p;
+
             MATCH (r:Restaurante {nombre: "${nombre}"})
-            DETACH DELETE r
+            DETACH DELETE r;
         `;
 
         await session.run(query);

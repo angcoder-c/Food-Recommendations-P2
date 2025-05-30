@@ -37,7 +37,7 @@ export const useAuthStore = create<AuthStore>()(
         set({ likeCount: count+1});
       },
       logout: () => {
-        set({ token: null, user: null, userId:null, isLoggedIn: false });
+        set({ token: null, user: null, userId:null, isLoggedIn: false, likedProducts: []});
       },
       addLikedProduct: (productName) =>{
         set(state => ({ likedProducts: [...state.likedProducts, productName] }))

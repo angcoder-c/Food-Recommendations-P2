@@ -1,0 +1,223 @@
+{
+  "restaurante": "gogreen",
+  "productos": [
+{
+"nombre": "go_roma",
+"tipo": "comida",
+"precio": 44,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Go-Roma-1.png"
+},
+
+{
+"nombre": "go_cobb",
+"tipo": "comida",
+"precio": 46,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Go-Cobb-1.png"
+},
+
+
+{
+"nombre": "go_buffalo",
+"tipo": "comida",
+"precio": 46,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Go-Buffalo-1.png"
+},
+
+
+{
+"nombre": "go_cali",
+"tipo": "comida",
+"precio": 42,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Go-Cali-1.png"
+},
+
+{
+"nombre": "go_zeus",
+"tipo": "comida",
+"precio": 48,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Go-Zeus-1.png"
+},
+
+
+{
+"nombre": "igo_cesar",
+"tipo": "comida",
+"precio": 33,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Igo-Cesar.png"
+},
+
+{
+"nombre": "igo_indic",
+"tipo": "comida",
+"precio": 32,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Igo-Indic-2.png"
+},
+
+{
+"nombre": "igo_pacific",
+"tipo": "comida",
+"precio": 33,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Igo-pacific.png"
+},
+{
+"nombre": "igo_exotico",
+"tipo": "comida",
+"precio": 34,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Igo-exotic.png"
+},
+
+{
+"nombre": "igo_buffalo",
+"tipo": "comida",
+"precio": 34,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Igo-Buffalo-1-1.png"
+},
+
+{
+"nombre": "igo_club",
+"tipo": "comida",
+"precio": 34,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Igo-club-1.png"
+},
+{
+"nombre": "big_burrito",
+"tipo": "comida",
+"precio": 34,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Igo-Big-Burrito-1.png"
+},
+{
+"nombre": "igo_cozumel",
+"tipo": "comida",
+"precio": 32,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/cozumel.png"
+},
+{
+"nombre": "igo_texas",
+"tipo": "comida",
+"precio": 30,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Igo-Texas.png"
+},
+
+
+{
+"nombre": "panini_pavo_guacamol",
+"tipo": "comida",
+"precio": 34,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Panini-pavo-guacamol.png"
+},
+
+{
+"nombre": "panini_buffalo_cesar",
+"tipo": "comida",
+"precio": 34,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Panini-buffalo.png"
+},
+
+{
+"nombre": "panini_chicken_fajita",
+"tipo": "comida",
+"precio": 34,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Panini-chiken-fajita.png"
+},
+
+{
+"nombre": "panini_chicken_pesto",
+"tipo": "comida",
+"precio": 34,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Panini-chiken-pesto.png"
+},
+
+
+{
+"nombre": "parfaits",
+"tipo": "comida",
+"precio": 16,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/parfait-TROPICAL.png"
+},
+
+{
+"nombre": "postres_Chía",
+"tipo": "comida",
+"precio": 17,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/GG_Banano_Postres_Saludables.png"
+},
+
+{
+"nombre": "snack_frutas",
+"tipo": "comida",
+"precio": 15,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/vaso-de-frutas_GO-GREEN.png"
+},
+
+{
+"nombre": "snack_pepino",
+"tipo": "comida",
+"precio": 15,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Pepino-Pepita_1614.png"
+},
+
+{
+"nombre": "snack_zanahoria",
+"tipo": "comida",
+"precio": 15,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Zanahoria-Tajin_1614.png"
+},
+
+
+{
+"nombre": "gohot_pesto",
+"tipo": "comida",
+"precio": 46,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Pesto.png"
+},
+
+{
+"nombre": "gohot_lisboa",
+"tipo": "comida",
+"precio": 46,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Lisboa.png"
+},
+
+{
+"nombre": "gohot_thaiger",
+"tipo": "comida",
+"precio": 46,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Thaiger.png"
+},
+
+{
+"nombre": "gohot_chips_potle",
+"tipo": "comida",
+"precio": 46,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Chips-Potle.png"
+},
+
+
+{
+"nombre": "sopa_maya",
+"tipo": "comida",
+"precio": 31,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Sopa-Maya.png"
+},
+{
+"nombre": "yum-yum",
+"tipo": "comida",
+"precio": 31,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Sopa-Yum-Yum.png"
+},
+
+{
+"nombre": "geisha",
+"tipo": "comida",
+"precio": 31,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Sopa-Geisha.png"
+},
+
+{
+"nombre": "mexigo",
+"tipo": "comida",
+"precio": 31,
+"img":"https://grupogogreen.com/wp-content/uploads/2022/07/Sopa-Mexigo.png"
+}
+]
+}
