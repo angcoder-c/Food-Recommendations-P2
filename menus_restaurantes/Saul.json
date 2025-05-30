@@ -1,0 +1,124 @@
+{
+  "restaurante": "Saul",
+  "productos": [
+    {
+      "nombre": "crepa_nutella",
+      "tipo": "comida",
+      "precio": "24",
+      "img": "https://cafedelaflor.com/images/productos/20240429084431pag.web_(61).jpg"
+
+    },
+    {
+      "nombre": "crepa_banano",
+      "tipo": "comida",
+      "precio": "26", 
+      "img": "https://i.pinimg.com/736x/e4/13/04/e41304030f8612ba79084582512486af.jpg"
+
+    },
+    {
+      "nombre": "crepa_fresa_banano",
+      "tipo": "comida",
+      "precio": "30",
+      "img": "https://cafedelaflor.com/images/productos/202308081240466.jpg"
+
+    },
+    {
+      "nombre": "Sandwich_pollo",
+      "tipo": "comida",
+      "precio": "23",
+      "img": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/VJ6JDP2TSFCQJGXORDM66DH5CQ.jpg"
+
+    },
+    {
+      "nombre": "sandwich_tocino",
+      "tipo": "comida",
+      "precio": "23",
+      "img": "https://www.divinacocina.es/wp-content/uploads/sandwich-blt.jpg"
+
+    },
+    {
+      "nombre": "papas_saul",
+      "tipo": "comida",
+      "precio": "15",
+      "img": "https://osojimix.com/wp-content/uploads/2023/11/PAPAS-FRITAS.jpeg"
+
+    },
+    {
+      "nombre": "stroopwaffle",
+      "tipo": "comida",
+      "precio": "10",
+      "img": "https://yayaya.com.ec/wp-content/uploads/2021/07/waffle-con-helado-y-salsa-de-chocolate-1.jpg"
+    },
+    {
+      "nombre": "smoothie_fresa",
+      "tipo": "bebida",
+      "precio": "20",
+      "img": "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/simple-strawberry-smoothie.jpg"
+    },
+    {
+      "nombre": "smoothie_maracuya",
+      "tipo": "bebida",
+      "precio": "20",
+      "img": "https://www.qfc.com/content/v2/binary/recipe/images/5d6ece969da07c58141dc355-original.jpg"
+    },
+    {
+      "nombre": "smoothie_coco",
+      "tipo": "bebida",
+      "precio": "20", 
+      "img": "https://sebplatform.api.groupe-seb.com/statics/0f79f0ff5f6fad6218e2d4aee3ee19d1d684d465.jpg"
+    },
+    {
+      "nombre": "smoothie_naranja",
+      "tipo": "bebida",
+      "precio": "20",
+      "img": "https://www.e-leclerc.es/wp-content/uploads/2025/01/Firefly-Imagen-del-smoothie-de-naranja-zanahoria-y-pina-servido-en-vasos-decorado-con-una-rodaja-.jpg"
+    },{
+      "nombre": "iced_latte",
+      "tipo": "bebida",
+      "precio": "20",
+      "img": "https://www.thebeaderchef.com/wp-content/uploads/2020/04/boozy-iced-latte-1-500x500.jpg"
+    },
+    {
+      "nombre": "iced_latte_vainilla",
+      "tipo": "bebida",
+      "precio": "35", 
+      "img": "https://timhortons.co.uk/assets/img/products/eXQJSTAaSPvaHbflDie8fELsf7ZORQ1BuFDnE5Wh.jpg"
+    },
+    {
+      "nombre": "coca_cola",
+      "tipo": "bebida",
+      "precio": "12",
+      "img": "https://elfornet.com/media/catalog/product/cache/728587fcd73f36684dd4a1c3c4b36cfb/c/o/coca-cola-lata-33cl-caja-24unid_1_1_1.jpeg"
+    },
+    {
+      "nombre": "coca_cola_zero",
+      "tipo": "bebida",
+      "precio": "12",
+      "img": "https://tienda.labiferia.com.mx/wp-content/uploads/2024/02/cocazero.jpg"
+    },
+    {
+      "nombre": "chocolate",
+      "tipo": "bebida",
+      "precio": "18", 
+      "img": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/0403759f01456aebee8c55c46d6149a6.jpg"
+    },
+    {
+      "nombre": ",mocaccino",
+      "tipo": "bebida",
+      "precio": "20",
+      "img": "https://osojimix.com/wp-content/uploads/2021/07/MOCACCINO-500x500.jpg"
+    },
+    {
+      "nombre": "cappuccino",
+      "tipo": "bebida",
+      "precio": "17",
+      "img": "https://polleriaslagranja.com/wp-content/uploads/2022/10/La-Granja-Real-Food-Chicken-Capuccino.png"
+    },
+    {
+      "nombre": "latte",
+      "tipo": "bebida",
+      "precio": "17",
+      "img": "https://www.escoffieronline.com/wp-content/uploads/2013/12/a-guide-to-latte-art-_1107_524867_1_14094340_500.jpg"
+    }
+  ]
+}
