@@ -288,6 +288,10 @@ La aplicación permite:
 ## Referencias de componentes:
 **2. Componentes obtenidos de:**
 - Front desarrollado en base a los componentes de: [Shadcn](https://ui.shadcn.com/)
+
+## Material Adicional:
+
+
 ##Link de entrevistas de usuarios##
 **3. Entrevistas a posibles usuarios:**
   [Entrevistas](https://drive.google.com/drive/folders/13f5Nq_EpVyt6vTMVtMQw2dEoRu2sjI9b?usp=drive_link)
