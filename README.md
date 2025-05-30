@@ -288,5 +288,7 @@ La aplicación permite:
 ## Referencias de componentes:
 **2. Componentes obtenidos de:**
 - Front desarrollado en base a los componentes de: [Shadcn](https://ui.shadcn.com/) 
-
-
+**3. Entrevistas a posibles usuarios:**
+  [Entrevistas](https://drive.google.com/drive/folders/13f5Nq_EpVyt6vTMVtMQw2dEoRu2sjI9b?usp=drive_link)
+**4.Presentacion del proyecto:**
+  [Presentacion](https://www.canva.com/design/DAGoybfx1O4/ZoLNMZRcQfO30RBAZtsDNA/edit?utm_content=DAGoybfx1O4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
