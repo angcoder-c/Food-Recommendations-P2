@@ -1,0 +1,138 @@
+{
+  "restaurante": "Mixtas_frankfurt",
+  "productos": [
+    {
+      "nombre": "hot_dog_Chorizo",
+      "tipo": "comida",
+      "precio": "29",
+      "img": "https://wickedkitchen.com/wp-content/uploads/2022/07/vegan-hot-dog.jpg"
+
+    },
+{
+      "nombre": "sandwich_de_lomito",
+      "tipo": "comida",
+      "precio": "27",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1ci9ww9QPVE1ItBCHIsnhZGPm4m6orhvyA&s"
+
+    },
+ {
+      "nombre": "mixta_con_tocino",
+      "tipo": "comida",
+      "precio": "22",
+      "img": "https://storage.googleapis.com/movishop-bucket/images/34/mixta-con-tocino-hfj.jpeg"
+    },
+    {
+      "nombre": "mixta_simple",
+      "tipo": "comida",
+      "precio": "22",
+      "img": "https://movi.shop/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmovishop-bucket%2Fimages%2F34%2Fmixta-frankfurt-zsx.jpeg&w=3840&q=75"
+    },
+    {
+      "nombre": "mixta_de_chorizo",
+      "tipo": "comida",
+      "precio": "35",
+      "img": "https://movi.shop/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmovishop-bucket%2Fimages%2F34%2Fmixta-munich-caramelizada-con-tocino-jdv.jpeg&w=3840&q=75"
+    },
+    {
+      "nombre": "hot_dog_Chorizo",
+      "tipo": "comida",
+      "precio": "29",
+      "img": "https://wickedkitchen.com/wp-content/uploads/2022/07/vegan-hot-dog.jpg"
+
+    },
+    {
+      "nombre": "hot_dog_caramelizado",
+      "tipo": "comida",
+      "precio": "36",
+      "img": "https://img-global.cpcdn.com/recipes/e7acdeb0a14cf96d/400x400cq90/photo.jpg"
+
+    },
+    {
+      "nombre": "hot_dog_derretido",
+      "tipo": "comida",
+      "precio": "34", 
+      "img": "https://img-global.cpcdn.com/recipes/b07458bb01546f15/400x400cq70/photo.jpg"
+
+    },
+    {
+      "nombre": "hot_dog_tocino",
+      "tipo": "comida",
+      "precio": "32",
+      "img": "https://heygrillhey.com/wp-content/uploads/2015/07/331.jpg"
+
+    },
+    {
+      "nombre": "hot_dog_simple",
+      "tipo": "comida",
+      "precio": "32",
+      "img": "https://www.thereciperebel.com/wp-content/uploads/2022/04/air-fryer-hot-dogs-TRR-1200-14-of-15-500x500.jpg"
+
+    },
+    {
+      "nombre": "quesadilla",
+      "tipo": "comida",
+      "precio": "25",
+      "img": "https://culturedtable.com/wp-content/uploads/2023/05/quesadilla-1-735x735.jpg"
+
+    },
+    {
+      "nombre": "nachos_con_guacamole",
+      "tipo": "comida",
+      "precio": "16", 
+      "img": "https://recetas.coosur.com/wp-content/uploads/sites/2/2024/01/nachos-con-guacamole-750x750.jpg"
+    },
+    {
+      "nombre": "nachos_con_todo",
+      "tipo": "bebida",
+      "precio": "28",
+      "img": "https://www.recetasnestlecam.com/sites/default/files/srh_recipes/17611730d33db9403281a58723ae4ec0.jpg"
+    },{
+      "nombre": "nachos_con_queso",
+      "tipo": "bebida",
+      "precio": "20",
+      "img": "https://www.divinacocina.es/wp-content/uploads/nachos-con-salsa-queso.jpg"
+    },
+    {
+      "nombre": "molletes",
+      "tipo": "comida",
+      "precio": "35", 
+      "img": "https://img-global.cpcdn.com/recipes/4f5d1dd03b1af4cd/400x400cq90/photo.jpg"
+    },
+    {
+      "nombre": "platanos en mole",
+      "tipo": "comida",
+      "precio": "35",
+      "img": "https://www.guatemala.com/fotos/2024/12/Mole-de-platano-guatemalteco-uno-de-los-postres-mas-famosos-de-la-gastronomia-local-1.jpg"
+    },
+    {
+      "nombre": "pepsi",
+      "tipo": "bebida",
+      "precio": "10",
+      "img": "https://shoprite.ng/wp-content/uploads/2024/04/Pepsi-33cl-can-Cola-drink.jpg"
+    },
+    {
+      "nombre": "pepsi_black",
+      "tipo": "bebida",
+      "precio": "10", 
+      "img": "https://cropafresh.com/wp-content/uploads/2023/04/Pepsi-black-355ml.jpg"
+    },
+    {
+      "nombre": "orange_crush",
+      "tipo": "bebida",
+      "precio": "10",
+      "img": "https://tatiende.com/wp-content/uploads/2024/06/gaseosa-orange-crush-355ml.png"
+    },
+    {
+      "nombre": "canada_dry",
+      "tipo": "bebida",
+      "precio": "10",
+      "img": "https://americanmarket.es/wp-content/uploads/2023/07/01-refresco-canada-dry-ginger-ale-500x500-1.jpg"
+    },
+    {
+      "nombre": "salutaris",
+      "tipo": "bebida",
+      "precio": "10",
+      "img": "https://tiendacarmel.com/wp-content/uploads/2021/06/salutaris_limonada.jpg"
+    }
+  ]
+}
